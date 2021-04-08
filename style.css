@@ -82,6 +82,7 @@ body.wink .tongue {
     background: #f6d704;
     z-index: 4;
     cursor: pointer;
+    outline: none;
     transition: top .3s, left .3s, transform .3s;
 }
 
