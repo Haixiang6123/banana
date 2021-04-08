@@ -2,4 +2,8 @@
 
 A sooooooooo much cute [banana 🍌](https://yanhaixiang.com/banana/)~
 
-![](./preview.PNG)
+## Awake
+![](awake.PNG)
+
+## Sleep
+![](sleep.PNG)
