@@ -8,11 +8,18 @@ body {
     background: #f6d704;
 }
 
-body.hover .eye, body.hover .lip, body.hover .tongue {
-    border-color: #694110 !important;
+body.wink, body.wink .mask, body.wink .left-dimple::before, body.wink .right-dimple::after, body.wink .tongue {
+    background: #090723 !important;
 }
-body.hover .left-dimple, body.hover .right-dimple {
-    background: #694110 !important;
+
+body.wink .left-dimple, body.wink .right-dimple, body.wink .lip {
+    background: #090723 !important;
+    border-color: #090723 !important;
+}
+
+body.wink .tongue {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .head {
@@ -28,7 +35,12 @@ body.hover .left-dimple, body.hover .right-dimple {
     background: #855c25;
     border: 8px solid #855c25;
     border-radius: 500px;
-    transition: border-color .3s;
+    transition: all .3s;
+}
+
+.head > .eye.wink {
+    height: 0;
+    border-radius: 500px;
 }
 
 .mouth {
@@ -46,7 +58,6 @@ body.hover .left-dimple, body.hover .right-dimple {
     height: 80%;
     border: 8px solid #855c25;
     border-radius: 50%;
-    transition: border-color .3s;
 }
 
 .mouth > .lip > .mask {
@@ -71,7 +82,7 @@ body.hover .left-dimple, body.hover .right-dimple {
     background: #f6d704;
     z-index: 4;
     cursor: pointer;
-    transition: border-color .3s;
+    transition: top .3s, left .3s, transform .3s;
 }
 
 .mouth > .lip > .tongue:hover {
@@ -88,7 +99,6 @@ body.hover .left-dimple, body.hover .right-dimple {
     transform: rotate(30deg);
     border-radius: 500px;
     z-index: 3;
-    transition: background .3s;
 }
 
 .mouth > .right-dimple {
@@ -101,7 +111,6 @@ body.hover .left-dimple, body.hover .right-dimple {
     transform: rotate(-30deg);
     border-radius: 500px;
     z-index: 3;
-    transition: background .3s;
 }
 
 .mouth > .left-dimple::before {
