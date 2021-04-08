@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6d704;
+}
+
+.head {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head > .eye {
+    height: 100px;
+    width: 100px;
+    background: #855c25;
+    border: #694110;
+    border-radius: 500px;
+}
+
+.mouth {
+    position: relative;
+    width: 280px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mouth > .lip {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border: 8px solid #855c25;
+    border-radius: 50%;
+}
+
+.mouth > .lip > .mask {
+    position: absolute;
+    width: 120%;
+    height: 80px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f6d704;
+    z-index: 2;
+}
+
+.mouth > .lip > .tongue {
+    position: absolute;
+    border-radius: 500px;
+    right: 48px;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border: 8px solid #855c25;
+    background: #f6d704;
+    z-index: 4;
+}
+
+.mouth > .left-dimple {
+    position: absolute;
+    left: 16px;
+    top: 58px;
+    width: 8px;
+    height: 48px;
+    background: #855c25;
+    transform: rotate(30deg);
+    border-radius: 500px;
+    z-index: 3;
+}
+
+.mouth > .right-dimple {
+    position: absolute;
+    right: 16px;
+    top: 58px;
+    width: 8px;
+    height: 48px;
+    background: #855c25;
+    transform: rotate(-30deg);
+    border-radius: 500px;
+    z-index: 3;
+}
+
+.mouth > .left-dimple::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 6px;
+    height: 48px;
+    background: #f6d704;
+}
+
+.mouth > .right-dimple::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 0;
+    width: 6px;
+    height: 48px;
+    background: #f6d704;
+}
