@@ -8,6 +8,13 @@ body {
     background: #f6d704;
 }
 
+body.hover .eye, body.hover .lip, body.hover .tongue {
+    border-color: #694110 !important;
+}
+body.hover .left-dimple, body.hover .right-dimple {
+    background: #694110 !important;
+}
+
 .head {
     width: 400px;
     display: flex;
@@ -16,11 +23,12 @@ body {
 }
 
 .head > .eye {
-    height: 100px;
-    width: 100px;
+    height: 92px;
+    width: 92px;
     background: #855c25;
-    border: #694110;
+    border: 8px solid #855c25;
     border-radius: 500px;
+    transition: border-color .3s;
 }
 
 .mouth {
@@ -38,6 +46,7 @@ body {
     height: 80%;
     border: 8px solid #855c25;
     border-radius: 50%;
+    transition: border-color .3s;
 }
 
 .mouth > .lip > .mask {
@@ -61,6 +70,12 @@ body {
     border: 8px solid #855c25;
     background: #f6d704;
     z-index: 4;
+    cursor: pointer;
+    transition: border-color .3s;
+}
+
+.mouth > .lip > .tongue:hover {
+    border-color: #694110;
 }
 
 .mouth > .left-dimple {
@@ -73,6 +88,7 @@ body {
     transform: rotate(30deg);
     border-radius: 500px;
     z-index: 3;
+    transition: background .3s;
 }
 
 .mouth > .right-dimple {
@@ -85,6 +101,7 @@ body {
     transform: rotate(-30deg);
     border-radius: 500px;
     z-index: 3;
+    transition: background .3s;
 }
 
 .mouth > .left-dimple::before {
