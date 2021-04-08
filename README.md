@@ -1,2 +1,5 @@
 # banana
-A sooooooo much cute banana~🍌
+
+A sooooooooo much cute banana~ 🍌
+
+![](./preview.PNG)
