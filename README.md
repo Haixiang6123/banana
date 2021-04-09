@@ -3,7 +3,7 @@
 A sooooooooo much cute [banana 🍌](https://yanhaixiang.com/banana/)~
 
 ## Awake
-![](awake.PNG)
+![](awake.png)
 
 ## Sleep
-![](sleep.PNG)
+![](sleep.png)
