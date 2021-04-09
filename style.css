@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #f6d704;
+    cursor: pointer;
 }
 
 body.wink, body.wink .mask, body.wink .left-dimple::before, body.wink .right-dimple::after, body.wink .tongue {
@@ -84,10 +85,6 @@ body.wink .tongue {
     cursor: pointer;
     outline: none;
     transition: top .3s, left .3s, transform .3s;
-}
-
-.mouth > .lip > .tongue:hover {
-    border-color: #694110;
 }
 
 .mouth > .left-dimple {
